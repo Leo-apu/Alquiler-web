@@ -171,6 +171,7 @@ $(function() {
             $('.back-to-top').fadeOut(200)
         }
     });
+
     
     
     //Animate the scroll to yop
@@ -201,7 +202,7 @@ $(function() {
         shape: {
           type: "circle",
           stroke: {
-            width: 0,
+            width: 2,
             color: "#fa0f0f",
           },
           polygon: {
@@ -236,13 +237,13 @@ $(function() {
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#000000",
-          opacity: 0.3,
+          color: "#fa0f0f",
+          opacity: 0.2,
           width: 1,
         },
         move: {
           enable: true,
-          speed: 6,
+          speed: 4,
           direction: "none",
           random: false,
           straight: false,
