@@ -1,3 +1,4 @@
+
 $(function() {
     
     "use strict";
@@ -300,7 +301,44 @@ $(function() {
     
     
     
-    
+    const btn = document.getElementById("button");
+
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const serviceID = SERVICE_ID;
+        const templateID = TEMPLATE_ID;
+        const key = EMAILJS_PUBLIC_KEY;
+        
+        console.log(key);
+
+        emailjs.init(serviceID);
+        emailjs.sendForm(serviceID, templateID, this, key).then(
+          () => {
+            Swal.fire({
+              icon: "success",
+              title: "Gracias por contactarnos",
+              text: "Nos pondremos en contacto con usted lo antes posible",
+              confirmButtonText: "Ok",
+              confirmButtonColor: "#fa0f0f",
+            })
+            this.reset();
+          },
+          (err) => {
+            Swal.fire({
+              icon: "error",
+              title: "Oops...",
+              text: JSON.stringify(err),
+              confirmButtonText: "Ok",
+              confirmButtonColor: "#fa0f0f",
+            })
+          }
+        );
+
+        
+      });
     
     
     

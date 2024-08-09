@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     
     <!--====== Title ======-->
-    <title>Alquiler VG </title>
+    <title>Domus - Alquileres </title>
     
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +30,8 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
 </head>
 
@@ -114,21 +116,21 @@
                 <li data-target="#home" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active" style="background-image: url('assets/images/landing-1.webp'); height: 750px; background-size: cover;">
+                <div class="carousel-item active" style="background-image: url('assets/images/landing-1.webp'); height: 100vh; background-size: cover;">
                     <div class="carousel-caption d-md-block">
                         <h2 class="slider_title">Tu Nuevo Espacio Ideal</h2>
                         <p class="wow fadeInUp m-2">Explora una variedad de departamentos modernos y cómodos en ubicaciones privilegiadas. ¡Tu nuevo hogar te espera!</p>
                         <a href="#about" class="main-btn">Conócenos</a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('assets/images/landing-2.png'); height: 750px; background-size: cover;">
+                <div class="carousel-item" style="background-image: url('assets/images/landing-2.png'); height: 100vh; background-size: cover;">
                     <div class="carousel-caption d-md-block">
                         <h2 class="slider_title">Descubre Nuestros Departamentos</h2>
                         <p class="wow fadeInUp m-2">Encuentra el lugar perfecto para ti, con opciones que se adaptan a todos los gustos y necesidades. Desde estudios hasta espaciosos departamentos familiares.</p>
                         <a href="#menu" class="main-btn">Ver Departamentos</a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-image: url('assets/images/landing-3.webp'); height: 750px; background-size: cover;">
+                <div class="carousel-item" style="background-image: url('assets/images/landing-3.webp'); height: 100vh; background-size: cover;">
                     <div class="carousel-caption d-md-block">
                         <h2 class="slider_title">Desde siempre, Brindando Calidad</h2>
                         <p class="wow fadeInUp m-2">Con años de experiencia, ofrecemos propiedades de alta calidad con una atención personalizada para que te sientas como en casa.</p>
@@ -294,7 +296,7 @@
                             <div class="customer_content_wrapper media-body">
                                 <h5 class="author_name">Ana Martínez</h5>
                                 <span class="sub_title">Inquilina Satisfecha</span>
-                                <p>Mi experiencia con [Nombre de la Empresa] ha sido excelente. Encontré el departamento perfecto en tiempo récord, y el equipo siempre estuvo disponible para resolver cualquier duda. ¡Recomiendo sus servicios sin dudarlo!</p>
+                                <p style="font-size: 12px ;">Mi experiencia con [Nombre de la Empresa] ha sido excelente. Encontré el departamento perfecto en tiempo récord, y el equipo siempre estuvo disponible para resolver cualquier duda. ¡Recomiendo sus servicios sin dudarlo!</p>
                                 <ul class="star">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -315,7 +317,7 @@
                             <div class="customer_content_wrapper media-body">
                                 <h5 class="author_name">Luis Fernández</h5>
                                 <span class="sub_title">Cliente Feliz</span>
-                                <p>El proceso de alquiler con [Nombre de la Empresa] fue muy sencillo. Su equipo me ayudó a encontrar un lugar que se ajusta a mis necesidades y presupuesto. Estoy muy satisfecho con el servicio recibido.</p>
+                                <p style="font-size: 12px ;">El proceso de alquiler con [Nombre de la Empresa] fue muy sencillo. Su equipo me ayudó a encontrar un lugar que se ajusta a mis necesidades y presupuesto. Estoy muy satisfecho con el servicio recibido.</p>
                                 <ul class="star">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -336,7 +338,7 @@
                             <div class="customer_content_wrapper media-body">
                                 <h5 class="author_name">Laura Gómez</h5>
                                 <span class="sub_title">Renta a Largo Plazo</span>
-                                <p>Excelente servicio y atención. Desde el primer contacto, el equipo de [Nombre de la Empresa] mostró profesionalismo y compromiso. Mi familia y yo estamos muy felices con nuestro nuevo hogar.</p>
+                                <p style="font-size: 12px ;">Excelente servicio y atención. Desde el primer contacto, el equipo de [Nombre de la Empresa] mostró profesionalismo y compromiso. Mi familia y yo estamos muy felices con nuestro nuevo hogar.</p>
                                 <ul class="star">
                                     <li><i class="lni lni-star-filled"></i></li>
                                     <li><i class="lni lni-star-filled"></i></li>
@@ -637,32 +639,32 @@
                         </div> <!-- section title -->
                     </div>
                 </div> <!-- row -->
-                <form id="contact-form" action="assets/contact.php" method="post">
+                <form id="contact-form" >
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="single_form mt-30">
-                                <input name="name" type="text" placeholder="Nombre">
+                                <input name="name" type="text" placeholder="Nombre" required >
                             </div> <!-- single form -->
                         </div>
                         <div class="col-lg-6">
                             <div class="single_form mt-30">
-                                <input name="email" type="email" placeholder="Correo Electrónico">
+                                <input name="email" type="email" placeholder="Correo Electrónico" required>
                             </div> <!-- single form -->
                         </div>
                         <div class="col-lg-12">
                             <div class="single_form mt-30">
-                                <input name="subject" type="text" placeholder="Asunto">
+                                <input name="subject" type="text" placeholder="Asunto" required>
                             </div> <!-- single form -->
                         </div>
                         <div class="col-lg-12">
                             <div class="single_form mt-30">
-                                <textarea name="message" placeholder="Mensaje"></textarea>
+                                <textarea name="message" placeholder="Mensaje" required></textarea>
                             </div> <!-- single form -->
                         </div>
                         <p class="form-message"></p>
                         <div class="col-lg-12">
                             <div class="single_form text-center mt-30">
-                                <button class="main-btn">ENVIAR</button>
+                                <button id="button" type="submit" class="main-btn">ENVIAR</button>
                             </div> <!-- single form -->
                         </div>
                     </div> <!-- row -->
@@ -752,7 +754,7 @@
         <div class="footer_copyright">
             <div class="container">
                 <div class="copyright text-center">
-                    <p>Diseñado y Desarrollado por <a href="https://portfolio-cruz-leandro.netlify.app/" target="_blank" rel="nofollow">Leandro V. Cruz - Analista Programador</a></p>
+                    <p>© 2024 - Desarrollado por <a href="https://portfolio-cruz-leandro.netlify.app/" target="_blank" rel="nofollow">Leandro V. Cruz - Analista Programador</a>- Todos los Derechos Reservados</p>
                 </div> <!-- copyright -->
             </div> <!-- container -->
         </div> <!-- footer copyright -->
@@ -793,10 +795,15 @@
     <script src="assets/js/wow.min.js"></script>
     
     <!--====== Main js ======-->
+    <script src="config.js"></script>
     <script src="assets/js/main.js"></script>
 
     <!--====== Particles js ======-->
     <script src="assets/js/particles.min.js"></script>
+
+    <!--====== Email js ======-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
     
 </body>
 
