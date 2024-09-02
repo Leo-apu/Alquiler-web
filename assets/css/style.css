@@ -478,24 +478,6 @@ p {
   z-index: -1;
 }
 
-.flotante {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
-  z-index: 999;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-  background-color: #48c857;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-}
 .header_navbar {
   position: absolute;
   top: 0;
@@ -1094,7 +1076,8 @@ p {
       content: '';
       width: 100%;
       height: 100%;
-      background-color: rgba(20, 24, 57, 0.78);
+      background-color: rgba(128, 5, 13, 0.78);
+      border-radius: 10px;
       top: 0;
       left: 0;
       -webkit-transform: scale(0.95);
@@ -1110,7 +1093,8 @@ p {
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
     .single_gallery .gallery_image img {
-      width: 100%; }
+      width: 100%;
+     border-radius: 20px; }
   .single_gallery .gallery_content {
     position: absolute;
     top: 50%;
@@ -1469,3 +1453,23 @@ p.form-message.success, p.form-message.error {
   .back-to-top:hover {
     color: #fff;
     background-color: #fa0f0f; }
+
+    .flotante {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      z-index: 999;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      background-color: #48c857;
+      -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      text-align: center;
+      cursor: pointer;
+      display: none;
+    }
