@@ -1097,6 +1097,7 @@ p {
      border-radius: 20px; }
   .single_gallery .gallery_content {
     position: absolute;
+    text-align: center;
     top: 50%;
     left: 0;
     right: 0;
@@ -1117,7 +1118,7 @@ p {
     padding: 30px; }
     .single_gallery .gallery_content .gallery_title {
       color: #fff;
-      font-size: 24px;
+      font-size: 3em;
       font-weight: 600; }
     .single_gallery .gallery_content p {
       color: #fff;
